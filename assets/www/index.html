@@ -1,10 +1,24 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Cordova</title>
-<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+  <title>Cordova</title>
+  <link rel="stylesheet" href="css/jquery.mobile-1.2.0-alpha.1.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <script type="text/javascript" charset="utf-8" src="js/cordova-2.0.0.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.2.0-alpha.1.min.js"></script>
 </head>
 <body>
-<h1>Hello World</h1>
+  <div data-role="page">
+    <div data-role="header">
+      <h1>Golf Scorecard</h1>
+    </div><!-- /header -->
+    <div data-role="content" data-theme="b">	
+      <div data-role="listview" data-inset="true">
+        <li><a href="./new_game.html" data-transition="slide">New Game</a></li>
+        <li><a href="./new_game.html" data-transition="slide">Past Games</a></li>
+      </div>
+    </div><!-- /content -->
+  </div><!-- /page -->
 </body>
 </html>
